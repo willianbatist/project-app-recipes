@@ -49,7 +49,7 @@ function Header(props) {
           <button
             type="button"
             data-testid="profile-top-btn"
-            className="profile"
+            className="profile svg-icon"
             src={ profileIcon }
             onClick={ () => ClickToProfile(true) }
           >
@@ -60,7 +60,7 @@ function Header(props) {
 
           <button
             type="button"
-            className="profile"
+            className="profile svg-icon"
             src={ searchIcon }
             onClick={ () => setScreen(!screen) }
           >

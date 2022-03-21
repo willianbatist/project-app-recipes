@@ -92,6 +92,8 @@
   width: 141px;
 }
 
-.check {
-  text-decoration: line-through;
+.sameStart {
+  border: 5px double rgba(206, 5, 5, 0.767);
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.63);
 }

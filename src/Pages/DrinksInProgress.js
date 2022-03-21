@@ -181,6 +181,7 @@ function DrinksInProgress() {
             { data.strInstructions }
           </p>
           <button
+            className="sameStart"
             type="button"
             data-testid="finish-recipe-btn"
             disabled={ isDisabled }

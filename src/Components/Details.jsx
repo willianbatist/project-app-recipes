@@ -32,6 +32,7 @@ export default function Details() {
   const BHI = blackHeartIcon;
   const localFavorite = JSON.parse(localStorage.getItem('favoriteRecipes'));
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { fetchConditional(); }, []);
 
   function changeButton() {
@@ -96,6 +97,7 @@ export default function Details() {
     setRedirect(true);
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function verificationFavorite() {
     const local = JSON.parse(localStorage.getItem('favoriteRecipes'));
     if (local) {
@@ -118,7 +120,12 @@ export default function Details() {
           <CardDrinks index={ index } data={ data } />
           <div className="icons-details">
             {copy && (<span>Link copied!</span>)}
-            <button type="button" data-testid="share-btn" onClick={ clipURL } src={ SI }>
+            <button
+              type="button"
+              data-testid="share-btn"
+              onClick={ clipURL }
+              src={ SI }
+            >
               <img src={ SI } alt="shareIcon" />
             </button>
             <button
@@ -151,7 +158,7 @@ export default function Details() {
               </CarouselItem>))}
           </Carousel>
           <button
-            className="start-recipe"
+            className="start-recipe sameStart"
             type="button"
             data-testid="start-recipe-btn"
             onClick={ toRedirect }
@@ -206,7 +213,7 @@ export default function Details() {
             src={ `https://www.youtube.com/embed/${URLvideo}` }
           />
           <button
-            className="start-recipe"
+            className="start-recipe sameStart"
             type="button"
             data-testid="start-recipe-btn"
             onClick={ toRedirect }

@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useState, useEffect } from 'react';
 import { Carousel, CarouselItem } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';

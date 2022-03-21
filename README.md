@@ -6,7 +6,7 @@ Este repositório contem o **Projeto APP Recipes** que reúne o aprendizado dese
 # Projeto APP Recipes
 
 ### Resultado obtido:
-<img src="./UaiFood.gif" height="500px"/>
+<img src="./UaiFood.gif" height="400px"/>
 
 #### Habilidades que foram exigidas:
 

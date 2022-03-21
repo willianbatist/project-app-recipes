@@ -5,6 +5,7 @@ import { handleDoneMeals } from '../Helpers/index';
 import IngredientMeasure from '../Services/IngredientMeasure';
 import whiteHearthIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
+import SI from '../images/shareIcon.svg';
 
 export default function FoodsInProgress() {
   const [meal, setMeal] = useState();
@@ -159,9 +160,10 @@ export default function FoodsInProgress() {
           <button
             type="button"
             data-testid="share-btn"
-            onClick={ () => clipURL() }
+            onClick={ clipURL }
+            src={ SI }
           >
-            share
+            <img src={ SI } alt="share" />
           </button>
           <button
             type="button"

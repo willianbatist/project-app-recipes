@@ -4,8 +4,9 @@
 }
 
 .button-ingredients-first {
-  margin-top: 150px;
-  margin-left: 16%;
+  margin-top: 20px;
+  margin-left: 2%;
+  margin-bottom: 20px;
   align-items: center;
   appearance: none;
   display: flex;
@@ -30,8 +31,9 @@
 }
 
 .button-ingredients-second {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 16%;
+  margin-bottom: 20px;
   align-items: center;
   appearance: none;
   display: flex;
@@ -57,8 +59,9 @@
 
 
 .button-ingredients-third {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 16%;
+  margin-bottom: 20px;
   align-items: center;
   appearance: none;
   display: flex;
@@ -80,4 +83,8 @@
   text-decoration: none;
   width: 250px;
   font-size: 18px;
+}
+
+.buttons {
+  display: flex;
 }

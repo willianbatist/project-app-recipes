@@ -5,6 +5,7 @@ import { handleFavorite, handleDoneRecipes } from '../Helpers/index';
 import IngredientMeasure from '../Services/IngredientMeasure';
 import whiteHearthIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
+import SI from '../images/shareIcon.svg';
 
 function DrinksInProgress() {
   const [drink, setDrink] = useState();
@@ -134,8 +135,9 @@ function DrinksInProgress() {
             type="button"
             data-testid="share-btn"
             onClick={ clipURL }
+            src={ SI }
           >
-            share
+            <img src={ SI } alt="share" />
           </button>
           <button
             type="button"

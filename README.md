@@ -13,11 +13,11 @@ Este repositório contem o **Projeto APP Recipes** que reúne o aprendizado dese
   - Fazer requisições e consumir dados vindos de uma `API`;
   - Utilizar os ciclos de vida de um componente React;
   - Utilizar o Switch e React Router;
-  - Criar um store Redux em aplicações React;
-  - Criar actions no Redux em aplicações React;
-  - Criar dispatchers no Redux em aplicações React;
-  - Conectar Redux aos componentes React;
-  - Criar actions assíncronas na sua aplicação React que faz uso de Redux.
+  - Utilizar a Context API do React para gerenciar estado;
+  - Utilizar o React Hook useState;
+  - Utilizar o React Hook useContext;
+  - Utilizar o React Hook useEffect;
+  - Criar Hooks customizados.
 
 ---
 

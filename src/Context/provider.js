@@ -11,7 +11,6 @@ function Provider({ children }) {
   const [fetchRadio, setFetchRadio] = useState('');
   const [recipes, setRecipes] = useState('');
   const [filterIngredients, setFilterIngredients] = useState([]);
-  console.log(filterIngredients);
   const [meal, setMeal] = useState();
   const [drink, setDrink] = useState();
   const [id, setID] = useState();

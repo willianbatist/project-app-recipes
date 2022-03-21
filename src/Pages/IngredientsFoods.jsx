@@ -12,7 +12,6 @@ function IngredientsFoods() {
   const TWELVE = 12;
   const { pathname } = useLocation();
   const { setFilterIngredients } = useContext(context);
-  console.log(pathname);
   /* componentDidMount */
   useEffect(() => {
     async function ingredient() {

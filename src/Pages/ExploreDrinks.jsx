@@ -16,8 +16,6 @@ function ExploreDrinks() {
   const [id, setId] = useState();
 
   async function DrinksRandom() {
-    const url = window.location.href;
-    console.log(url);
     const randomDrinks = await Drinks();
     const { drinks } = randomDrinks;
     setId(drinks[0].idDrink);

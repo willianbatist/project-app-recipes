@@ -20,8 +20,6 @@ function ExploreFoods() {
   const [id, setId] = useState();
 
   async function FoodsRandom() {
-    const url = window.location.href;
-    console.log(url);
     const randomFoods = await Foods();
     const { meals } = randomFoods;
     setId(meals[0].idMeal);

@@ -100,7 +100,6 @@ export default function Foods() {
         )) }
       </div>
       <div className="divFoods">
-        {console.log(foodsMount)}
         { recipes
         && recipes.slice(0, TWELVE).map((food, index) => (
           handleRecipeCard(food, index)

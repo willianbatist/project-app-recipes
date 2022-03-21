@@ -18,7 +18,6 @@ function Profile() {
     localStorage.removeItem('inProgressRecipes');
     history.push('/');
   }
-  console.log(test);
 
   function doneRecipes() {
     history.push('/done-recipes');

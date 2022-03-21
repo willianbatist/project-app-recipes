@@ -6,10 +6,10 @@ Este repositório contem o **Projeto APP Recipes** que reúne o aprendizado dese
 # Projeto APP Recipes
 
 ### Resultado obtido:
-![](./UaiFood.gif)
+<img src="./UaiFood.gif" height="400px"/>
 
 #### Habilidades que foram exigidas:
-  <img src"./UaiFood.gif" />
+
   - Fazer requisições e consumir dados vindos de uma `API`;
   - Utilizar os ciclos de vida de um componente React;
   - Utilizar o Switch e React Router;

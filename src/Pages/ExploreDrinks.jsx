@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory, Redirect } from 'react-router-dom';
 import Footer from '../Components/Footer';
-import profileIcon from '../images/profileIcon.svg';
 import Drinks from '../Services/suprisesDrink';
+import Header from '../Components/Header';
+import '../styles/exploreDrinks.css';
 
 function ExploreDrinks() {
   const history = useHistory();
@@ -26,16 +27,13 @@ function ExploreDrinks() {
 
     <div>
       <header>
-        <button type="button" src={ profileIcon }>
-          <img src={ profileIcon } alt="profileIcon" data-testid="profile-top-btn" />
-        </button>
-
-        <h2 data-testid="page-title">Explore Drinks</h2>
+        <Header title="explore Drinks" />
       </header>
       <div>
         <div>
           <button
             type="button"
+            className="button-explore "
             data-testid="explore-by-ingredient"
             onClick={ screenDrinksMeal }
           >
@@ -45,6 +43,7 @@ function ExploreDrinks() {
           <button
             type="button"
             data-testid="explore-surprise"
+            className="button-explore-surprise"
             onClick={ DrinksRandom }
           >
             Surprise me!

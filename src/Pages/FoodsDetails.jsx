@@ -1,9 +1,13 @@
 import React from 'react';
 import Details from '../Components/Details';
+import Footer from '../Components/Footer';
 
 function FoodsDetails() {
   return (
-    <Details />
+    <div>
+      <Details />
+      <Footer />
+    </div>
   );
 }
 

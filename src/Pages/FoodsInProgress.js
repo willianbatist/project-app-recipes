@@ -5,6 +5,7 @@ import { handleDoneMeals } from '../Helpers/index';
 import IngredientMeasure from '../Services/IngredientMeasure';
 import whiteHearthIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
+import Footer from '../Components/Footer';
 
 export default function FoodsInProgress() {
   const [meal, setMeal] = useState();
@@ -210,7 +211,9 @@ export default function FoodsInProgress() {
           >
             Finish Recipe
           </button>
+          <Footer />
         </div>
+
       )) }
     </div>
   );

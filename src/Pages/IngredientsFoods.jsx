@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Footer from '../Components/Footer';
-import profileIcon from '../images/profileIcon.svg';
 import Ingredients from '../Services/ingredientsFoods';
+import Header from '../Components/Header';
 import context from '../Context/context';
-import '../styles/ingredientsDrinks.css';
+import '../styles/ingredientsFoods.css';
 
 function IngredientsFoods() {
   const [ingredientes, setIngredientes] = useState();
@@ -31,15 +31,17 @@ function IngredientsFoods() {
   return (
     <div>
       <header>
-        <button type="button" src={ profileIcon }>
+        {/* <button type="button" src={ profileIcon }>
           <img
             src={ profileIcon }
             alt="profileIcon"
             data-testid="profile-top-btn"
+
           />
         </button>
 
-        <h2 data-testid="page-title">Explore Ingredients</h2>
+        <h2 data-testid="page-title">Explore Ingredients</h2> */}
+        <Header title="ExploreFoods" />
         {ingredientes
           && ingredientes.map((ingredient, index) => (
             <Link
@@ -49,13 +51,19 @@ function IngredientsFoods() {
               data-testid={ `${index}-ingredient-card` }
             >
               <img
+                className="imagem-ingredientes"
                 src={ `https://www.themealdb.com/images/ingredients/${ingredient.strIngredient}-Small.png` }
                 alt="#"
                 data-testid={ `${index}-card-img` }
               />
-              <p data-testid={ `${index}-card-name` }>
+
+              <p
+                data-testid={ `${index}-card-name` }
+                className="paragraph"
+              >
                 {ingredient.strIngredient}
               </p>
+
             </Link>
           ))}
       </header>

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Footer from '../Components/Footer';
-import profileIcon from '../images/profileIcon.svg';
 import IngredientDrinksAPI from '../Services/ingredientsDrinks';
 import '../styles/ingredientsDrinks.css';
+import Header from '../Components/Header';
 import context from '../Context/context';
 
 function IngredientsDrinks() {
@@ -32,15 +32,7 @@ function IngredientsDrinks() {
   return (
     <div>
       <header>
-        <button type="button" src={ profileIcon }>
-          <img
-            src={ profileIcon }
-            alt="profileIcon"
-            data-testid="profile-top-btn"
-          />
-        </button>
-
-        <h2 data-testid="page-title">Explore Ingredients</h2>
+        <Header title="ExploreDrinks" />
         {ingredientes
           && ingredientes.map((ingredient, index) => (
             <Link
@@ -52,10 +44,13 @@ function IngredientsDrinks() {
               <img
                 src={ `https://www.thecocktaildb.com/images/ingredients/${ingredient.strIngredient1}-Small.png` }
                 alt="#"
-                className="img-drinks"
+                className="imagem-ingredientes"
                 data-testid={ `${index}-card-img` }
               />
-              <p data-testid={ `${index}-card-name` }>
+              <p
+                data-testid={ `${index}-card-name` }
+                className="paragraph"
+              >
                 {ingredient.strIngredient1}
               </p>
 

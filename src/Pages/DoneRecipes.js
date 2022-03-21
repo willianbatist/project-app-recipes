@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import shareIcon from '../images/shareIcon.svg';
-import profileIcon from '../images/profileIcon.svg';
+import Header from '../Components/Header';
 
 function DoneRecipes() {
   const [doneRecipes, setDoneRecipes] = useState([]);
@@ -33,25 +33,25 @@ function DoneRecipes() {
   return (
     <div>
       <header>
-        <button type="button" src={ profileIcon }>
-          <img src={ profileIcon } alt="profileIcon" data-testid="profile-top-btn" />
-        </button>
-        <h1 data-testid="page-title">Done Recipes</h1>
+        <Header title="Done Recipes" />
       </header>
       <button
         type="button"
+        className="button-ingredients-first"
         data-testid="filter-by-all-btn"
       >
         All
       </button>
       <button
         type="button"
+        className="button-ingredients-second"
         data-testid="filter-by-food-btn"
       >
         Food
       </button>
       <button
         type="button"
+        className="button-ingredients-third"
         data-testid="filter-by-drink-btn"
       >
         Drinks

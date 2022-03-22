@@ -26,27 +26,22 @@ Este repositório contem o **Projeto APP de Receitas** que reúne o aprendizado 
 
 ### Introdução
 
-O Projeto Game Trivia busca recriar os clássicos jogos de perguntas. Nesse projeto, foram utilizadas as seguintes tecnologias: ReactJS, Redux (actions, reducers, etc…), React Router e para gerar as perguntas foi utilizado a [API Trivia](https://opentdb.com/api_config.php). API gera perguntas de várias categorias e níveis de dificuldade diferentes, sendo possível combinar categorias com níveis de dificuldade, para só gerar perguntas ao qual foi especificada. Com esse projeto busco apresentar todo o conhecimento aprendido até o presente momento em Front-End, e me testar em relação aos desafios de criar uma página web dinâmica, que recebe várias interações do usuário, e graças ao Redux lida muito bem com a passagem de informações entre componentes React.
+O Projeto APP de Receitas, denominado de Uai Foods é uma aplicação web para mobile e tem como objetivo ser um site de receitas onde o usuário pode pesquisar por receitas de comidas ou drinks e terá acesso aos ingredientes e forma de preparo dos mesmos, seja por descrição em texto ou vídeo demonstrativo. Nesse projeto, foram utilizadas as seguintes tecnologias: React Hooks, a criação de Hooks customizadas, React Router Dom, Bootstrap e também dados de duas api, [The Meal db](https://www.themealdb.com/) e [The Cocktail db](https://www.thecocktaildb.com/api.php). Esse Projeto é a maior e mais complexa aplicação web feita até o presente momento, é o projeto que consolida todo meu conhecimento em Front-end, de estrutura semelhante a um TCC. E a realização do mesmo só foi possível em conjunto com outros desenvolvedores.
 
 
-### 2. Tela Inicial
+### 2. Tela Principal
 
-  A primeira página exibida é a tela de login, onde são requeridos os dados de nome e e-mail, caso o e-mail esteja cadastrado no [Gravatar](https://pt.gravatar.com/) e a pessoa estiver uma foto no site, na tela do jogo Trivia terá a foto do usuário. A tela inicial também possui o botão de play que inicia o jogo e o botão Settings que dá acesso a página de configurações.
-
-
-### 2.1 Play!
-
-Após preencher o nome e o e-mail, o botão Play será habilitado e, se clicado, inicia o jogo. Na tela do jogo, é apresentada a foto do usuário, o nome e o score que muda conforme os acertos no jogo. No meio da tela é mostrada a categoria, a pergunta e os botões com as alternativas de cada pergunta. Já na parte inferior, fica contido o cronômetro que define o tempo necessário para responder a pergunta, se o mesmo chegar a zero, a resposta será considerada errada. Sempre ao final do tempo ou ao clicar em umas das alternativas, o botão next aparecerá na página, para seguir o jogo até a próxima questão e chegar ao final das perguntas, onde o usuário encontrará a tela de FeedBack.
+  Depois do login, vem a tela principal que é composta por uma header, que possui navegação para a página de perfil e lupa de pesquisa, onde o usuário poderá pesquisar receitas por nome, ingredientes ou pela primeira letra do nome do prato ou drink. Ainda na parte de cima da tela temos os botões de filtro de pesquisa por categoria, onde só renderiza refeições ou drinks da categoria escolhida. No corpo do tela principal é o espaço que renderiza card das receitas, inicialmente são 12 receitas e muda de acordo com a pesquisa do usuário. Na parte inferior da tela está o footer, que permite a navegação entre telas de comidas e bebidas, e a tela de exploração que permite ao usuário explorar receitas, seja por nacionalidade ou ingredientes.
 
 
-### 2.2 Tela de FeedBack
+### 2.1 Tela de Detalhes da Receita
 
-Nesse momento, a página mostra quantos pontos o jogador teve, a quantidade de questões certas e mais dois botões: 'Play again' para jogar de novo e o botão 'Ranking' que mostra o ranking dos jogadores anteriores. O Ranking dos jogadores é salvo no LocalStorage para que fique salvo sempre que a pessoa sair e voltar a jogar.
+Ao clicar em alguma receita de sua preferência o usuário é redirecionado a página de detalhes da receita, nesse momento apresenta-se na tela a foto, nome, categoria, ingredientes, vídeo e descrição da receita. O usuário tem a opção de dar start, o que dará a possibilidade dele marcar as etapas da receita já concluídas. Nesse momento, tudo é salvo no localStorage, o que permite que a pessoa possa continuar depois se assim preferir. Assim que terminar, poderá clicar em finish, o que salvará em receitas finalizadas, assim podendo ter um histórico de receitas já feitas pelo usuário.
 
 
 #### Conclusão
 
-O Projeto Game Trivia ainda está em desenvolvimento e recebendo melhorias, a página de configuração está em desenvolvimento, pois ainda possui alguns bugs. Esse projeto foi realizado em grupo em colaboração de [Antônio Augusto](https://github.com/Toineto), [Samuel De Alencar](https://github.com/SamuelDAlencar) e para organizar as tarefas em uma equipe foi necessário aplicar uma metodologia ágil, o kanban. Pequenas partes estão sendo entregues para que possa receber feedback e sofrer melhorias mais rápidas, assim podemos entender se estamos indo no caminho certo ou não. O desafio de realizar esse projeto me ajudou a alavancar minhas hard skills de ReactJS, melhorar consideravelmente minha lógica de programação e entender muito bem como uma metodologia ágil contribui numa equipe de desenvolvedores.
+O Projeto APP de Receitas ainda está em desenvolvimento e recebendo melhorias. Esse projeto foi realizado em grupo, com a colaboração de [João Vitor](https://www.linkedin.com/in/joaokeuwe/), [Caio Oliveira](https://github.com/caioliveira-dev), [Lucas Junqueira](https://github.com/lucaadev), [Juliane Alves](https://github.com/Juliane-Alves) e para organizar as tarefas em uma equipe foi necessário aplicar uma metodologia ágil, o kanban. Pequenas partes estão sendo entregues para que possa receber feedback e sofrer melhorias mais rápidas, assim podemos entender se estamos indo no caminho certo ou não. O desafio de realizar esse projeto me ajudou a alavancar minhas hard skills de ReactJS, melhorar consideravelmente minha lógica de programação e entender muito bem como uma metodologia ágil contribui numa equipe de desenvolvedores.
   
 ---
 ### Trybe
